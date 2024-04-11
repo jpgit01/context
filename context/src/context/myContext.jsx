@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-const MiContexto = React.createContext({})
+import React, {useState} from "react"
+export const MiContexto = React.createContext({})
 
 export default function EjemploContextoProvider({children}){
-    const [saludo, setSaludo] = useState('hola estoy saludando')
-    
+    const [saludo, setSaludo] = useState('Estoy saludando con context...')
+
     return(
-        <MiContexto.Provider>
+        <MiContexto.Provider value={{saludo, setSaludo}}>
             {children}
         </MiContexto.Provider>
     )

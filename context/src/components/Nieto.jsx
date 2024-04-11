@@ -1,7 +1,11 @@
+import { useContext } from "react";
+import { MiContexto } from "../context/myContext";
+
 export default function nieto() {
+    const contenidoContexto = useContext(MiContexto)
     return(
         <>
-        <h1>Hola soy el nieto</h1>
+        <a onClick={() =>contenidoContexto.setSaludo('click nieto, con context')}><h1 >Hola soy el nieto: {contenidoContexto.saludo}</h1></a>
         </>
     );
 }
