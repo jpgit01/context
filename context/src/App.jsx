@@ -1,7 +1,6 @@
 import Padre from "./components/Padre";
 import Hijo from "./components/Hijo";
 import Nieto from "./components/Nieto";
-import Nieto1 from "./components/nieto1";
 
 import EjemploContextoProvider from "./context/myContext";
 
@@ -13,7 +12,6 @@ function App() {
       <Padre />
       <Hijo />
       <Nieto />
-      <Nieto1/>
     </EjemploContextoProvider>
   );
 }
